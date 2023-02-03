@@ -1,0 +1,242 @@
+github link 
+
+https://github.com/YogeshRaje/FICE_AVVC
+
+tiny url link 
+https://tinyurl.com/ficeac
+
+
+Day1
+++++++++++++++++++++++++++++++
+ppt of Day1 
+
++++++++++++++++++++++++++++++++++++++++++++
+***Task1- Sign In on Intel Devlcloud and create new directory - https://devcloud.intel.com/oneapi/ 
+step1)-Sign In and LogIn into Intel OneAPI Devcloud account
+https://devcloud.intel.com/oneapi/
+yogesh@fice.in
+
+step2) Launch Jupyter Lab
+
+step3) Open Terminal in Dev clould 
+ Click on + symbol and then select Terminal icon form other catergory. It will open linux terminal. 
+
+step4)create direcotry ac
+  $mkdir ac
+
+step5) change directory to ac
+  $cd ac
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Task2-Run python file on CPU , GPU and FPGA uisng Intel Distribution of Python
+(IDP )
+
+step1) Upload file demo_python1.py
+or 
+open terminal and run command 
+git clone https://github.com/YogeshRaje/FICE_AVVC
+
+step2) Create run.sh file 
+$nano run.sh 
+add following line of code 
+#!/bin/bash
+%%qsub
+cd $PBS_O_WORKDIR
+python demo_python1.py
+
+-save run.sh and return to terminal 
+
+
+step3)run code on GPU- How to target specific GPUs
+The command for submitting a job to a compute node hosting a GPU is: 
+
+$qsub -l nodes=1:gpu:ppn=2 run.sh 
+
+step3a) Run code on genration9 processor 
+$qsub -l nodes=1:gen9:ppn=2 run.sh
+
+step4) Run code on xeon processor 
+$qsub -l nodes=1:xeon:ppn=2 run.sh
+
+step5) run code on fpga emulator
+$qsub -l nodes=1:fpga_compile:ppn=2 -d . run.sh
+ 
+step6) run code on fpga hardware Arria
+$qsub -l nodes=1:fpga_runtime:arria10:ppn=2 -d . run.sh
+
+step7) run code on fpga hardware Stratix
+$qsub -l nodes=1:fpga_runtime:stratix10:ppn=2 -d . run.sh
+
+
+It will create two files- run.sh.e2081402  and run.sh.o2081402
+ 
+-To check output run command on terminal 
+>cat run.sh.o2081402
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task 3 - Run Basic commands on Intel devcloud terminal-
+
+step1) open devcloud terminal-
+Click on + symbol and then select Terminal icon form other catergory. It will open linux terminal.
+
+step2) How to list all compute nodes and their properties
+     $ pbsnodes
+
+step3)How to list the free compute nodes (lower-case ‘L’)
+    $     pbsnodes -l free
+
+step4)list details of perticular subnode 
+  $ pbsnodes s001-n144
+
+step5)Listing compute node properties
+    $ pbsnodes | sort | grep properties 
+
+step5)Targeting specific compute nodes
+    $ pbsnodes | sort | grep properties | grep gpu 
+    
+    
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Task4- Install Intel Distribution of Python on Laptop
+-Search for intel distribution for python 
+https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html
+
+-click on Download the Stand-Alone Version
+https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#python
+
+-select Intel Distribution for Python for Windows*  to download and install it 
+
+Installation of IDP intel distribution of python  on linux 
+-open url https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#python
+
+-download .sh
+-chmod 777 filename.sh
+-sh filename.sh
+
+-open terminal in home
+>cd intel/oneapi
+
+-intialize oneapi
+>source setvars.sh 
+-initialize Intel complier 
+>source setvars.sh intel64
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task5- Demo - How to Activate and run sample program using Intel Distribution of Python on Laptop
+**After installation of oneAPI:Intel Distribution for Python follow the following steps
+  
+-open anaconda Prompt
+- cd  C:\Program Files (x86)\Intel\oneAPI\intelpython\python3.9\Scripts
+-> activate
+- Check the python version
+> python --version
+
+***It shows output as Python 3.9.10 :Intel Corporation . It means Intel OneAPI:Intel distribution is initialized on your local machine.
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task6 - demo of program of linear regression in jupyter notebook
+-Create folder on desktop and change to that directory
+>cd F:\FICE\Amruta Chennai Phase 2\demo_Intel_OneAPI
+>F:
+-open jupyter notebook with Intel version on local machine 
+> jupyter notebook 
+-Jupyter notebook will open .
+
+-Create new file and execute command 
+!python --version
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Task7 - installing OneAPI eseentials on devlcoud 
+
+step1)Open terminal in devcloud 
+step2) create new directory under ac 
+$ cd ac
+$mkdir oneapidemo
+step3) change directory to oneapidemo
+$cd oneapidemo
+step4) install oneAPI Essentials samples
+$ git clone https://github.com/IntelSoftware/Machine-Learning-using-oneAPI.git
+
+step5)check directory for  installtion of samples of oneAPI Essentials  
+$dir
+*It will show directory Machine-Learning-using-oneAPI
+
+step6) Go to machine learning one API folder 
+$cd Machine-Learning-using-oneAPI
+
+step7) install required libraries type the following command (do not copy paste the command)
+$ pip install –r requirements.txt
+
+Step8) explore folders using path  ac/Machine-Learning-using-oneAPI/
+1)ac/Machine-Learning-using-oneAPI/00_sklearnex_Prerequisites/Setup_Instructions_Numba.ipynb
+To run program slelect kernel as Python3 (Intel oneAPI 2023.0)
+2)welocme.ipynb 
+3)ac/Machine-Learning-using-oneAPI/01_Intel_Extensions_for_Scikit-learn_Patching_CPU/01_01_Patching_Classifier_CPU.ipynb
+
+4) ac/Machine-Learning-using-oneAPI/01_Intel_Extensions_for_Scikit-learn_Patching_CPU/01_02_sklearnex_Motivation_Acceleration.ipynb
+
+***Installation of Intel® Extension for Scikit-learn
+https://intel.github.io/scikit-learn-intelex/installation.html
+
+***Install from PyPI (recommended by default)
+step1)open anaconda prompt type command 
+
+step2)[Optional step] [Recommended] To prevent version conflicts, create and activate a new environment:
+python -m venv env
+.\env\Scripts\activate
+
+step3) Install scikit-learn-intelex:
+pip install scikit-learn-intelex
+
+**Quickstart 
+https://intel.github.io/scikit-learn-intelex/quick-start.html
+
+**supported alogorithms
+https://intel.github.io/scikit-learn-intelex/algorithms.html#sklearn-algorithms
+
+**if you want to run samples on local machine -Intel(R) Extension for Scikit-learn* notebooks
+https://github.com/intel/scikit-learn-intelex/tree/master/examples/notebooks#snake-intelr-extension-for-scikit-learn-notebooks
+You can use python notebooks with the help of Jupyter* notebook to run the following files:
+$ pip install notebook scikit-learn-intelex
+Run Jupyter after installation:
+$ jupyter notebook --notebook-dir=./ --ip=* --no-browser
+**use notebboks from loation
+F:\FICE\AmrutaChennaiPhase2\sklearnex_notebooks
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Intel extenstion of sklearn
+***To Patch (sklearnex )==>
+from sklearnex import patch_sklearn 
+patch_sklearn()
+
+
+***To Unpatch (sklearnex)==>
+from sklearnex import unpatch_sklearn
+unpatch_sklearn()
+
+
+***To executing code on Intel Sklearnex without changing code written in sklearn
+>python -m sklearnex Class_patch.py
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Commands-  
+-command to convert .ipynb file into .py 
+>jupyter nbconvert Class_patch.ipynb --to script
+>jupyter nbconvert Class_patch_demo.ipynb --to script
+>jupyter nbconvert demo_python1.ipynb --to script
+
+-Task- executing code on Intel Sklearnex without changing code 
+>python -m sklearnex Class_patch.py
+>python -m sklearnex Class_patch_demo.py
+>python -m sklearnex demo_python1.py
+
+++++++++++++++++++++++++++++++++++++++++++++
+
