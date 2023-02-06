@@ -137,7 +137,7 @@ Task5- Demo - How to Activate and run sample program using Intel Distribution of
 ***It shows output as Python 3.9.10 :Intel Corporation . It means Intel OneAPI:Intel distribution is initialized on your local machine.
  
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Task6 - demo of program of linear regression in jupyter notebook
+Task6 - demo of program using Intel Distribution of python
 -Create folder on desktop and change to that directory
 >cd F:\FICE\Amruta Chennai Phase 2\demo_Intel_OneAPI
 >F:
