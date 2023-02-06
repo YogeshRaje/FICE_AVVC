@@ -12,7 +12,7 @@ Day1
 ***Task1- Sign In on Intel Devlcloud and create new directory - https://devcloud.intel.com/oneapi/ 
 step1)-Sign In and LogIn into Intel OneAPI Devcloud account
 https://devcloud.intel.com/oneapi/
-yogesh@fice.in
+
 
 step2) Launch Jupyter Lab
 
