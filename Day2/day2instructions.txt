@@ -1,0 +1,45 @@
+Day2 
+=====
+
+Task 1 -Forming Explorative Data Analytics with Python Packages and libraries
+
+
+Numpy pandas case study.ipynb
+
+Suicides in India 2001-2012.csv
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task 2- Performing statistical operations with NumPy
+
+
+
+Statistical operation with numpy.ipynb
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task 3- Data Preprocessing with Pandas
+4.Data Ingestion with Pandas
+Lab_Pandas_Package.ipynb
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task 4- Matplotlib Data Analytics Case Studies
+
+car_data.csv
+Data Analysis Case Study - Car Dekho.ipynb
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Task5 - modin 
+
+Salary_Data.csv
+modin_demo.ipynb
+modin80GBdataset_7223.ipynb
+
+modin80GBdataset_7223_googlecolab.ipynb
+
+
+firstmodlin_googlecolab.ipynb
+
+
+
+
