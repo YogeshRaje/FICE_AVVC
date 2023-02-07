@@ -1,6 +1,9 @@
 Day2 
 =====
+Task- Download Day2  code 
+$ git clone https://github.com/YogeshRaje/FICE_AVVC/tree/main/Day2
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Task 1 -Forming Explorative Data Analytics with Python Packages and libraries
 
 
