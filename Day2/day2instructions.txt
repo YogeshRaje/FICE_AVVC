@@ -19,7 +19,7 @@ Statistical operation with numpy.ipynb
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Task 3- Data Preprocessing with Pandas
-4.Data Ingestion with Pandas
+
 Lab_Pandas_Package.ipynb
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
