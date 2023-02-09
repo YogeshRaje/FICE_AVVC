@@ -18,3 +18,35 @@ step6) Go to machine learning one API folder
 $cd Machine-Learning-using-oneAPI
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+######
+Intel extenstion of sklearn
+***To Patch (sklearnex )==>
+
+from sklearnex import patch_sklearn 
+patch_sklearn()
+
+
+
+
+
+***To Unpatch (sklearnex)==>
+from sklearnex import unpatch_sklearn
+unpatch_sklearn()
+
+
+***To executing code on Intel Sklearnex without changing code written in sklearn
+>python -m sklearnex Class_patch.py
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Commands-  
+-command to convert .ipynb file into .py 
+>jupyter nbconvert Class_patch.ipynb --to script
+>jupyter nbconvert Class_patch_demo.ipynb --to script
+>jupyter nbconvert demo_python1.ipynb --to script
+
+-Task- executing code on Intel Sklearnex without changing code 
+>python -m sklearnex Class_patch.py
+>python -m sklearnex Class_patch_demo.py
+>python -m sklearnex demo_python1.py
