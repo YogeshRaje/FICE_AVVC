@@ -1,0 +1,19 @@
+Task1 - installing OneAPI eseentials on devlcoud 
+
+step1)Open terminal in devcloud 
+step2) create new directory under ac 
+$ cd ac
+$mkdir oneapidemo
+step3) change directory to oneapidemo
+$cd oneapidemo
+step4) install oneAPI Essentials samples
+$ git clone https://github.com/IntelSoftware/Machine-Learning-using-oneAPI.git
+
+step5)check directory for  installtion of samples of oneAPI Essentials  
+$dir
+*It will show directory Machine-Learning-using-oneAPI
+
+step6) Go to machine learning one API folder 
+$cd Machine-Learning-using-oneAPI
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
