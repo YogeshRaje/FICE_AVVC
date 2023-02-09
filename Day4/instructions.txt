@@ -90,5 +90,105 @@ http://millionsongdataset.com/pages/getting-dataset/#subset
 http://millionsongdataset.com/pages/example-track-description/
 +++++++++++++++++++++
 
+2)svm
+file -svc_adult.ipynb
+Dataset - 
+Adult Data Set
+Predict whether income exceeds $50K/yr based on census data. Also known as "Census Income" dataset.
+https://archive.ics.uci.edu/ml/datasets/Adult
+
+supported algorithms on CPU
+https://intel.github.io/scikit-learn-intelex/algorithms.html
+
+
+*** openml datasets
+https://docs.openml.org/Datasets/
+https://docs.openml.org/OpenML_definition/
+https://sci2s.ugr.es/keel/datasets.php
+
+
+3)KNN for MNIST dataset -Handwritten digit 
+filename- knn_mnist.ipynb
+dataset - MNIST dataset
+
+
+sklearn datasets
+https://scikit-learn.org/stable/datasets/toy_dataset.html
+
+computing with sklearn
+https://scikit-learn.org/stable/computing.html
+
+
+
+supervised learning
+https://scikit-learn.org/stable/supervised_learning.html
+
+
+4)KMeans - for spoken arabic digit dataset
+filename - kmeans.ipynb
+dataset-
+
+5) Random Forest for Yolanda dataset -Counts of damage and casualties from official data sets
+filename= random_forest_yolanda.ipynb
+
+
+6)Nu Support Vector Regression - NuSVR for Medical Charges dataset
+ac/day4/nusvr_medical_charges.ipynb
+
+Medical Insurance Cost Analysis and Prediction-
+https://scikit-learn.org/stable/modules/generated/sklearn.svm.NuSVR.html
+
+https://www.kaggle.com/code/subhakarks/medical-insurance-cost-analysis-and-prediction/notebook
+
+https://www.kaggle.com/datasets/mirichoi0218/insurance
+
+7) DBSCAN
+
+Spoken Arabic Digit Data Set
+https://archive.ics.uci.edu/ml/datasets/Spoken+Arabic+Digit
+
+8)ElasticNet for Airlines DepDelay dataset
+https://www.kaggle.com/datasets/giovamata/airlinedelaycauses
+
+1000000 records (1 Million) -test data
+9000000  Nine million -train data
+1,00,00,000 in word - (ten million)- total dataset
+
+
+sklearn.datasets.fetch_openml- 
+https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_openml.html
+
+save pandas dataframe file to csv 
+pd.to_csv('file1.csv')
+location- C:\Users\user\Downloads
+
+++++++++++++++++++++++++++++++++++++++++
+azure big datasets download
+https://azure.microsoft.com/en-us/products/open-datasets
+
+open dataset name on azure -
+https://learn.microsoft.com/en-us/azure/open-datasets/dataset-catalog?culture=en-us&country=us
+
+
+NYC Taxi & Limousine Commission - yellow taxi trip records (50GB)
+
+https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets
+
+https://learn.microsoft.com/en-us/azure/open-datasets/samples
+https://github.com/Azure/OpenDatasetsNotebooks/
+
++++++++++++++
+
+GCP big datasets
+https://cloud.google.com/bigquery/public-data
+
+
++++++
+
+Big datasets by Intel -
+
+https://www.intel.com/content/www/us/en/developer/articles/technical/devcloud-published-datasets.html
+
+
 
 
