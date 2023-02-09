@@ -1,6 +1,7 @@
 Task1 - installing OneAPI eseentials on devlcoud and learning Intel Extension for scikitlearn (skleaernex)
 
 step1)Open terminal in devcloud 
+https://devcloud.intel.com/oneapi/get_started/
 step2) create new directory under ac 
 $ cd ac
 $mkdir oneapidemo
