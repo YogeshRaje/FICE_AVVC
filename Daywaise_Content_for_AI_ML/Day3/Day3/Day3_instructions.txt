@@ -1,0 +1,129 @@
+google drive link for day4 -
+https://drive.google.com/drive/folders/16gtUKlWCjhwON6fM1rKU0XSxyGbQGph4?usp=sharing
+
+Task1 - Machine Learning ppt
+filename= 1. Intro_Machine_Learning.pptx
+filepath =F:\FICE\OPJU\5 Days Workshop - Part 1\Presentations\Machine Learning with Python
+
+
+Task2- code for ppt1
+Foldername =F:\FICE\OPJU\5 Days Workshop - Part 1\Sample Codes\Extra Sample Codes for ML algorithms\2.Decision Tree and KNN\Decision Tree
+
+code filename = simplemachinelearningprogram.ipynb
+
+***************************************************
+
+Task3 - show ppt for classification algorithm
+filename= 4. classification_intro.pptx
+filepath =F:\FICE\OPJU\5 Days Workshop - Part 1\Presentations\Machine Learning with Python
+
+
+Task4 - show ppt 
+5. Evaluation_metrics_classification.pptx
+
+Task5 = show ppt 
+6. Decision_Trees.pptx
+
+Task6 - Classification poblem statement
+file path= 
+F:\FICE\OPJU\Day3
+Filename = 01Decision Tree for Diabetes.ipynb
+Dataset = Dataset-diabetes.csv
+
+
+
+
+
+
+
+
+
+
+********************************************
+Task7- Simple Linear Regression
+path=F:\FICE\OPJU\Day3
+filename=1Simple_Linear_Regression_SalaryData.ipynb
+dataset=Salary_Data.csv
+
+Task8 - Linear regression Sklearnex 
+filename= linear_regression.ipynb
+path=F:\FICE\OPJU\Day3
+
+***************************************************
+
+
+Task 9 =  Support verctor classifier
+filepath = F:\FICE\OPJU\Day3\SVM
+filename = SVM.ipynb
+dataset=cell_samples.csv
+
+
+Task10= Support verctor classifier sklearnex
+filename - svc_adult.ipynb
+path=path=F:\FICE\OPJU\Day3
+
+
+********************************************
+Task11- ANN -  show ppt of ANN
+filename = AI and Neural Network.pptx
+
+Task12 - ANN program 
+filename - ANN1_using_NLPClassifier.ipynb
+filepath - F:\FICE\OPJU\Day3\ANN
+colab path - https://colab.research.google.com/drive/113D8-jkgLW3LVkpv_CgwOuqSH1yVWR_y
+dataset - cancer_classification.csv
+
+
+
+
+
+
+
+
+
+
+
+
+With Intel sklearex 
+filename = 01_sklearnex_Decision Tree for Diabetes-Copy1.ipynb
+
+KNN with sklearnex 
+filename= knn_mnist.ipynb
+filepath= F:\FICE\OPJU\code  for workshop\sklearnex_notebooks
+
+
+svc with sklearnex 
+filename= Class_patch.ipynb
+path = F:\FICE\OPJU\Day3
+
+
+svc with sklearnex 
+svc_adult.ipynb
+
+
+
+
+
+
+
+
+
+
+
+
+Intel sklearnex supported algorithms 
+https://intel.github.io/scikit-learn-intelex/algorithms.html
+
+samples for skleranex 
+https://intel.github.io/scikit-learn-intelex/samples.html
+
+
+
+
+
+
+
+
+
+
+

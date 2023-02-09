@@ -1,0 +1,93 @@
+Day3 
+Task1 - installing OneAPI eseentials on devlcoud 
+
+step1)Open terminal in devcloud 
+step2) create new directory under ac 
+$ cd ac
+$mkdir oneapidemo
+step3) change directory to oneapidemo
+$cd oneapidemo
+step4) install oneAPI Essentials samples
+$ git clone https://github.com/IntelSoftware/Machine-Learning-using-oneAPI.git
+
+step5)check directory for  installtion of samples of oneAPI Essentials  
+$dir
+*It will show directory Machine-Learning-using-oneAPI
+
+step6) Go to machine learning one API folder 
+$cd Machine-Learning-using-oneAPI
+
+step7) install required libraries type the following command (do not copy paste the command)
+$ pip install –r requirements.txt
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++
+######
+Intel extenstion of sklearn
+***To Patch (sklearnex )==>
+from sklearnex import patch_sklearn 
+patch_sklearn()
+
+
+***To Unpatch (sklearnex)==>
+from sklearnex import unpatch_sklearn
+unpatch_sklearn()
+
+
+***To executing code on Intel Sklearnex without changing code written in sklearn
+>python -m sklearnex Class_patch.py
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Commands-  
+-command to convert .ipynb file into .py 
+>jupyter nbconvert Class_patch.ipynb --to script
+>jupyter nbconvert Class_patch_demo.ipynb --to script
+>jupyter nbconvert demo_python1.ipynb --to script
+
+-Task- executing code on Intel Sklearnex without changing code 
+>python -m sklearnex Class_patch.py
+>python -m sklearnex Class_patch_demo.py
+>python -m sklearnex demo_python1.py
+
+++++++++++++++++++++++++++++++++++++++++++++
+Task- Sklearnex notebooks (activate intel distribution of python)
+
+or run Intel Devcloud 
+
+1)linear_regression.ipynb
+Datasetdescription - Million Song Dataset
+https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd
+
+https://archive.ics.uci.edu/ml//datasets.php?format=mat&task=reg&att=&area=other&numAtt=10to100&numIns=greater1000&type=mvar&sort=attDown&view=list
+
+
+2)svm
+file -svc_adult.ipynb
+Dataset - 
+Adult Data Set
+Predict whether income exceeds $50K/yr based on census data. Also known as "Census Income" dataset.
+https://archive.ics.uci.edu/ml/datasets/Adult
+
+
+*** openml datasets
+https://docs.openml.org/Datasets/
+https://docs.openml.org/OpenML_definition/
+https://sci2s.ugr.es/keel/datasets.php
+
+
+3)KNN for MNIST dataset -Handwritten digit 
+filename- knn_mnist.ipynb
+dataset - MNIST dataset
+
+4)KMeans - for spoken arabic digit dataset
+filename - kmeans.ipynb
+dataset-
+
+5) Random Forest for Yolanda dataset -Counts of damage and casualties from official data sets
+filename= random_forest_yolanda.ipynb
+
+++++++++++++++++++++++++++++++++++++++++
+

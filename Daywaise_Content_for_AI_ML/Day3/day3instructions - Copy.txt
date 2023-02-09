@@ -1,0 +1,159 @@
+Day3 
+Task1 - installing OneAPI eseentials on devlcoud 
+
+step1)Open terminal in devcloud 
+step2) create new directory under ac 
+$ cd ac
+$mkdir oneapidemo
+step3) change directory to oneapidemo
+$cd oneapidemo
+step4) install oneAPI Essentials samples
+$ git clone https://github.com/IntelSoftware/Machine-Learning-using-oneAPI.git
+
+step5)check directory for  installtion of samples of oneAPI Essentials  
+$dir
+*It will show directory Machine-Learning-using-oneAPI
+
+step6) Go to machine learning one API folder 
+$cd Machine-Learning-using-oneAPI
+
+step7) install required libraries type the following command (do not copy paste the command)
+$ pip install –r requirements.txt
+
+Step8) explore folders using path  ac/Machine-Learning-using-oneAPI/
+1)ac/Machine-Learning-using-oneAPI/00_sklearnex_Prerequisites/Setup_Instructions_Numba.ipynb
+To run program slelect kernel as Python3 (Intel oneAPI 2023.0)
+2)welocme.ipynb 
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+***Intel(R) Extension for Scikit-learn***
+Intel(R) Extension for Scikit-learn is a seamless way to speed up your Scikit-learn application. The acceleration is achieved through the use of the Intel(R) oneAPI Data Analytics Library (oneDAL). Patching scikit-learn makes it a well-suited machine learning framework for dealing with real-life problems.
+
+Intel(R) Extension for Scikit-learn contains scikit-learn patching functionality that was originally available in daal4py package. All future updates for the patches will be available only in Intel(R) Extension for Scikit-learn. We recommend you to use scikit-learn-intelex package instead of daal4py. You can learn more about daal4py in daal4py documentation.
+
+https://github.com/OnlyDeniko/daal4py
+https://github.com/intel/scikit-learn-intelex
+
+Intel(R) Extension for Scikit-learn is available at the Python Package Index, on Anaconda Cloud in Conda-Forge channel and in Intel channel. You can also build the extension from sources.
+
+The extension is also available as a part of Intel® AI Analytics Toolkit (AI Kit). If you already have AI Kit installed, you do not need to install the extension.
+
+Installation via pip package manager is recommended by default:
+
+pip install scikit-learn-intelex
+
+demo files path =F:\FICE\AmrutaChennaiPhase2\code  for workshop\sklearnex_notebooks
+
+######
+Intel extenstion of sklearn
+***To Patch (sklearnex )==>
+from sklearnex import patch_sklearn 
+patch_sklearn()
+
+
+***To Unpatch (sklearnex)==>
+from sklearnex import unpatch_sklearn
+unpatch_sklearn()
+
+
+***To executing code on Intel Sklearnex without changing code written in sklearn
+>python -m sklearnex Class_patch.py
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Commands-  
+-command to convert .ipynb file into .py 
+>jupyter nbconvert Class_patch.ipynb --to script
+>jupyter nbconvert Class_patch_demo.ipynb --to script
+>jupyter nbconvert demo_python1.ipynb --to script
+
+-Task- executing code on Intel Sklearnex without changing code 
+>python -m sklearnex Class_patch.py
+>python -m sklearnex Class_patch_demo.py
+>python -m sklearnex demo_python1.py
+
+++++++++++++++++++++++++++++++++++++++++++++
+Task- Sklearnex notebooks (activate intel distribution of python)
+
+or run Intel Devcloud 
+
+1)linear_regression.ipynb
+Datasetdescription - Million Song Dataset
+https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd
+
+https://archive.ics.uci.edu/ml//datasets.php?format=mat&task=reg&att=&area=other&numAtt=10to100&numIns=greater1000&type=mvar&sort=attDown&view=list
+
+
+
+https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd#
+
+
+https://archive.ics.uci.edu/ml/machine-learning-databases/00203/
+
+http://millionsongdataset.com/
+
+http://millionsongdataset.com/pages/getting-dataset/
+
+http://millionsongdataset.com/pages/getting-dataset/#subset
+
+http://millionsongdataset.com/pages/example-track-description/
+
+
+2)svm
+file -svc_adult.ipynb
+Dataset - 
+Adult Data Set
+Predict whether income exceeds $50K/yr based on census data. Also known as "Census Income" dataset.
+https://archive.ics.uci.edu/ml/datasets/Adult
+
+
+*** openml datasets
+https://docs.openml.org/Datasets/
+https://docs.openml.org/OpenML_definition/
+https://sci2s.ugr.es/keel/datasets.php
+
+
+3)KNN for MNIST dataset -Handwritten digit 
+filename- knn_mnist.ipynb
+dataset - MNIST dataset
+
+4)KMeans - for spoken arabic digit dataset
+filename - kmeans.ipynb
+dataset-
+
+5) Random Forest for Yolanda dataset -Counts of damage and casualties from official data sets
+filename= random_forest_yolanda.ipynb
+
+++++++++++++++++++++++++++++++++++++++++
+
+Machine Learning 
+
+1)Simple Linear regression
+
+F:\FICE\AmrutaChennaiPhase2\Day3
+
+1Simple_Linear_Regression_SalaryData.ipynb
+
+Salary.csv
+
+
+2)Multiple Linear regression  
+
+F:\FICE\AmrutaChennaiPhase2\5 Days Workshop\Sample Codes\Extra Sample Codes for ML algorithms\1.Linear Regression
+
+USA_Housing.csv
+
+3Linear Regression USAHousing.ipynb
+
++++++++++++++++++++++++++++++++++++++
+
+2)
+
+
+F:\FICE\AmrutaChennaiPhase2\5 Days Workshop\Sample Codes\Extra Sample Codes for ML algorithms\1.Linear Regression\Car_Selling_Price_Prediction
+
+Linear Regression Notebook - Car selling Price Prediction.ipynb
+
+car_data.csv
+#################################################
