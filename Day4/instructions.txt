@@ -27,8 +27,7 @@ Intel extenstion of sklearn
 from sklearnex import patch_sklearn 
 patch_sklearn()
 
-
-
+++++++++++++++++++++++++++++++++++++
 
 
 ***To Unpatch (sklearnex)==>
@@ -50,3 +49,46 @@ Commands-
 >python -m sklearnex Class_patch.py
 >python -m sklearnex Class_patch_demo.py
 >python -m sklearnex demo_python1.py
+
+
+
++++++++++++++++++++++++++++++++++++++
+
+
+
+Task2 
+
+1)linear_regression.ipynb
+Datasetdescription - Million Song Dataset
+https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd
+
+https://archive.ics.uci.edu/ml//datasets.php?format=mat&task=reg&att=&area=other&numAtt=10to100&numIns=greater1000&type=mvar&sort=attDown&view=list
+
+
+http://millionsongdataset.com/
+
+https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd#
+
+http://labrosa.ee.columbia.edu/millionsong/
+
+
+http://millionsongdataset.com/pages/example-track-description/
+
+
+https://aws.amazon.com/datasets/million-song-dataset/
+Size: 500 GB
+
+
+https://archive.ics.uci.edu/ml/machine-learning-databases/00203/
+
+http://millionsongdataset.com/
+
+http://millionsongdataset.com/pages/getting-dataset/
+
+http://millionsongdataset.com/pages/getting-dataset/#subset
+
+http://millionsongdataset.com/pages/example-track-description/
++++++++++++++++++++++
+
+
+
