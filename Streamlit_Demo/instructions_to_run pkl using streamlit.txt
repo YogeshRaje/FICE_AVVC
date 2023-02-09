@@ -1,0 +1,15 @@
+Intrsuctions to run model.pkl file using streamlit
+
+1) Save app.py and model.pkl files in the same directory/folder and open command prompt for that same folder using cmd command typing into the addressbar of that folder.
+2) Install scikit-learn using pip install scikit-learn
+3) Install the streamlit using command- pip install streamlit 
+4) To run file(app.py) and start the localhost  use command- streamlit run app.py
+It will show output on localhost 
+
+Note: make sure you have insatlled scikit-learn in your folder environment 
+
+ IRIS Flower Model Deployment URL - 
+https://yogeshraje-irisflowerprediction-app-sar065.streamlit.app/
+
+
+
